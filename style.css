@@ -1,7 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
-/* font-family: 'Rubik', sans-serif; */
+:root {
+  --main-color: #303742;
+  --yellow-color: #ffcf2d;
+  --orange-color: #f87f6f;
+  --orange-color-hover: #e84a35;
+  --green-color: #2db9c3;
+  --green-color-hover: #168b93;
+}
 
 body {
   font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-weight: 500;
+  margin-left: 10px;
+  color: var(--yellow-color);
+}
+
+img {
+  width: 40%;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ff7461;
+}
+
+/* Form */
+.form-input {
+  width: 95%;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-filter {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+}
+
+/* Buttons */
+.submit-btn {
+  background-color: var(--green-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--green-color-hover);
+}
+
+.btn-link {
+  font-size: 16px;
+  background-color: transparent;
+  color: #dd0606;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Items */
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.items li {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px 20px;
+  font-weight: 500;
+}
+
+.clear-btn {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  background-color: var(--orange-color);
+  color: #fff;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: var(--orange-color-hover);
+  border: 1px solid var(--orange-color-hover);
+}
+
+@media (max-width: 500px) {
+  .items li {
+    width: 100%;
+  }
 }

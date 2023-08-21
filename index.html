@@ -15,6 +15,65 @@
     <title>Shopping List</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <img src="images/shopping-1.png" alt="shopping cart" />
+        <h1>Shopping List</h1>
+      </header>
+      <form id="from">
+        <div class="form-control">
+          <input
+            type="text"
+            class="form-input"
+            id="item-input"
+            name="item"
+            placeholder="Enter item"
+          />
+        </div>
+        <div class="form-control">
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-plus">Add Item</i>
+          </button>
+        </div>
+      </form>
+
+      <div class="filter">
+        <input
+          type="text"
+          class="input-filter"
+          id="filter"
+          placeholder="Filter Items"
+        />
+      </div>
+
+      <ul class="items" id="item-list">
+        <li>
+          Bananas
+          <button class="remove-item btn-link">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Napkins
+          <button class="remove-item btn-link">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li>
+          Toothpaste
+          <button class="remove-item btn-link">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+      </ul>
+
+      <button id="clear" class="clear-btn">Clear All</button>
+    </div>
+
+    Illustration by
+    <a href="https://icons8.com/illustrations/author/eEbrZFlkyZbD">Anna A</a>
+    from <a href="https://icons8.com/illustrations">Ouch!</a>
+
     <script src="script.js"></script>
   </body>
 </html>
