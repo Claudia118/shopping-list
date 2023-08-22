@@ -55,19 +55,20 @@ footer {
   font-size: 18px;
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #e7e5e5;
   border-radius: 5px;
   outline: none;
 }
 
 .input-filter {
+  color: #fff;
   margin-top: 20px;
   width: 100%;
   font-size: 18px;
   margin-bottom: 20px;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e5e1e1;
   background: transparent;
   outline: none;
 }
